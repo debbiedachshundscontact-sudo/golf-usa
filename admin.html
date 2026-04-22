@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Smart Generation Golf Carts</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="admin-header">
+    <div class="container">
+      <div>
+        <a href="index.html" class="logo" style="color: var(--white);">Smart Generation<span>Golf Carts</span></a>
+        <span style="margin-left: 20px; opacity: 0.7;">Admin Panel</span>
+      </div>
+      <div>
+        <a href="index.html" class="btn btn-ghost btn-sm">View Site</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="admin-stats">
+        <div class="stat-card">
+          <h3>Total Listings</h3>
+          <div class="value" id="stat-total">0</div>
+        </div>
+        <div class="stat-card">
+          <h3>New Carts</h3>
+          <div class="value" id="stat-new">0</div>
+        </div>
+        <div class="stat-card">
+          <h3>Used Carts</h3>
+          <div class="value" id="stat-used">0</div>
+        </div>
+        <div class="stat-card">
+          <h3>Average Price</h3>
+          <div class="value" id="stat-avg-price">$0</div>
+        </div>
+      </div>
+
+      <div class="admin-form">
+        <h2 id="form-title">Add New Listing</h2>
+        <form id="listing-form">
+          <input type="hidden" id="listing-id">
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Title *</label>
+              <input type="text" id="listing-title" placeholder="2024 EZGO TXT Freedom" required>
+            </div>
+            <div class="form-group">
+              <label>Price ($) *</label>
+              <input type="number" id="listing-price" placeholder="8999" required>
+            </div>
+            <div class="form-group">
+              <label>Year *</label>
+              <input type="number" id="listing-year" placeholder="2024" required>
+            </div>
+            <div class="form-group">
+              <label>Make *</label>
+              <select id="listing-make" required>
+                <option value="">Select Make</option>
+                <option value="EZGO">EZGO</option>
+                <option value="Club Car">Club Car</option>
+                <option value="Yamaha">Yamaha</option>
+                <option value="Star EV">Star EV</option>
+                <option value="Columbia">Columbia</option>
+                <option value="Cruiser">Cruiser</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Model</label>
+              <input type="text" id="listing-model" placeholder="TXT Freedom">
+            </div>
+            <div class="form-group">
+              <label>Condition *</label>
+              <select id="listing-condition" required>
+                <option value="New">New</option>
+                <option value="Used">Used</option>
+                <option value="Refurbished">Refurbished</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Type *</label>
+              <select id="listing-type" required>
+                <option value="Electric">Electric</option>
+                <option value="Gas">Gas</option>
+                <option value="Lithium">Lithium</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Seats</label>
+              <select id="listing-seats">
+                <option value="2">2 Seater</option>
+                <option value="4">4 Seater</option>
+                <option value="6">6 Seater</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Color</label>
+              <input type="text" id="listing-color" placeholder="White">
+            </div>
+            <div class="form-group">
+              <label>Mileage</label>
+              <input type="text" id="listing-mileage" placeholder="0">
+            </div>
+            <div class="form-group">
+              <label>Location (State) *</label>
+              <select id="listing-state" required>
+                <option value="FL">Florida</option>
+                <option value="TX">Texas</option>
+                <option value="CA">California</option>
+                <option value="AZ">Arizona</option>
+                <option value="NV">Nevada</option>
+                <option value="SC">South Carolina</option>
+                <option value="NC">North Carolina</option>
+                <option value="GA">Georgia</option>
+                <option value="AL">Alabama</option>
+                <option value="ON">Ontario (Canada)</option>
+                <option value="BC">British Columbia</option>
+                <option value="AB">Alberta</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Image URL</label>
+              <input type="url" id="listing-image" placeholder="https://...">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Description</label>
+            <textarea id="listing-description" rows="4" placeholder="Detailed description of the golf cart..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Features</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="features" value="LED Lights"> LED Lights</label>
+              <label><input type="checkbox" name="features" value="USB Charger"> USB Charger</label>
+              <label><input type="checkbox" name="features" value="Bluetooth"> Bluetooth</label>
+              <label><input type="checkbox" name="features" value="Lift Kit"> Lift Kit</label>
+              <label><input type="checkbox" name="features" value="All-Terrain Tires"> All-Terrain Tires</label>
+              <label><input type="checkbox" name="features" value="Windshield"> Windshield</label>
+              <label><input type="checkbox" name="features" value="Rear Seat"> Rear Seat</label>
+              <label><input type="checkbox" name="features" value="Chrome Wheels"> Chrome Wheels</label>
+              <label><input type="checkbox" name="features" value="Onboard Charger"> Onboard Charger</label>
+              <label><input type="checkbox" name="features" value="Custom Paint"> Custom Paint</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Accepted Payment Methods</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="payments" value="Credit Card" checked> Credit Card</label>
+              <label><input type="checkbox" name="payments" value="Bank Wire Transfer" checked> Bank Wire Transfer</label>
+              <label><input type="checkbox" name="payments" value="Financing"> Financing Available</label>
+              <label><input type="checkbox" name="payments" value="Trade-In"> Trade-In Accepted</label>
+              <label><input type="checkbox" name="payments" value="Cash"> Cash</label>
+              <label><input type="checkbox" name="payments" value="PayPal"> PayPal</label>
+              <label><input type="checkbox" name="payments" value="Zelle"> Zelle</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Custom Payment Details</label>
+            <textarea id="listing-payment-details" rows="2" placeholder="e.g. 0% APR for 36 months, Accept Bitcoin, etc."></textarea>
+          </div>
+
+          <div style="display: flex; gap: 15px; margin-top: 25px;">
+            <button type="submit" class="btn btn-primary" id="submit-btn">Add Listing</button>
+            <button type="button" class="btn btn-ghost" onclick="resetForm()" id="cancel-btn" style="display: none;">Cancel</button>
+            <button type="button" class="btn btn-outline" onclick="exportData()">Export Data</button>
+            <button type="button" class="btn btn-outline" onclick="document.getElementById('import-file').click()">Import</button>
+            <input type="file" id="import-file" accept=".json" style="display: none;" onchange="importData(this)">
+          </div>
+        </form>
+      </div>
+
+      <h2 style="margin-bottom: 25px;">All Listings</h2>
+      <div class="listings-table" id="listings-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Title</th>
+              <th>Price</th>
+              <th>Year</th>
+              <th>Make</th>
+              <th>Condition</th>
+              <th>Location</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="admin-listings-body">
+          </tbody>
+        </table>
+        <div class="empty-state" id="empty-state">
+          <p>No listings yet. Add your first golf cart above!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

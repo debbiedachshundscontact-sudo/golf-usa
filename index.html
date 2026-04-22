@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Generation Golf Carts | Premium Golf Carts for Sale in USA & Canada</title>
+  <meta name="description" content="Smart Generation Golf Carts - Your premier source for new, used & custom golf carts across USA and Canada. EZGO, Club Car, Yamaha. Best prices, free shipping.">
+  <meta name="keywords" content="golf carts for sale, used golf carts, electric golf cart, gas golf cart, EZGO, Club Car, Yamaha golf cart, custom golf carts, smart generation">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Smart Generation Golf Carts">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="geo.region" content="US">
+  <meta name="geo.country" content="USA">
+
+  <link rel="canonical" href="https://smartgenerationgolfcarts.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://smartgenerationgolfcarts.com/">
+  <meta property="og:title" content="Smart Generation Golf Carts | Premium Golf Carts for Sale">
+  <meta property="og:description" content="Your premier source for golf carts in USA and Canada. New, used & custom carts at best prices.">
+  <meta property="og:image" content="https://smartgenerationgolfcarts.com/images/og-image.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Smart Generation Golf Carts">
+  <meta name="twitter:description" content="Premium golf carts for sale in USA and Canada.">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "Smart Generation Golf Carts",
+    "description": "Premier golf cart dealership offering new, used, and custom golf carts across USA and Canada.",
+    "url": "https://smartgenerationgolfcarts.com",
+    "logo": "https://smartgenerationgolfcarts.com/images/logo.png",
+    "telephone": "+1-800-555-4653",
+    "email": "sales@smartgenerationgolfcarts.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US"
+    },
+    "areaServed": ["US", "CA"],
+    "priceRange": "$3,000 - $25,000"
+  }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Smart Generation<span>Golf Carts</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#listings">Inventory</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#" onclick="openCalculator(); return false;">Finance</a></li>
+          <li><a href="blog.html">Guides</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Find Your Perfect Golf Cart</h1>
+        <p>Browse hundreds of new and used golf carts across the USA and Canada. Best prices, quality guaranteed.</p>
+
+        <div class="search-box">
+          <form class="search-row" id="search-form">
+            <input type="text" id="search-make" placeholder="Make (EZGO, Club Car, Yamaha)...">
+            <select id="search-condition">
+              <option value="">Any Condition</option>
+              <option value="new">New</option>
+              <option value="used">Used</option>
+              <option value="refurbished">Refurbished</option>
+            </select>
+            <select id="search-type">
+              <option value="">Any Type</option>
+              <option value="electric">Electric</option>
+              <option value="gas">Gas</option>
+              <option value="lithium">Lithium</option>
+            </select>
+            <select id="search-state">
+              <option value="">All States</option>
+              <option value="FL">Florida</option>
+              <option value="TX">Texas</option>
+              <option value="CA">California</option>
+              <option value="AZ">Arizona</option>
+              <option value="NV">Nevada</option>
+              <option value="SC">South Carolina</option>
+              <option value="NC">North Carolina</option>
+              <option value="GA">Georgia</option>
+              <option value="AL">Alabama</option>
+              <option value="CA">Canada</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="listings">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Golf Carts</h2>
+        <p>Hand-picked selection of quality golf carts ready for immediate delivery</p>
+      </div>
+
+      <div class="listings-grid" id="listings-grid">
+      </div>
+
+      <div class="text-center mt-20">
+        <a href="#listings" class="btn btn-outline" onclick="showAllListings()">View All Inventory</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="categories">
+    <div class="container">
+      <div class="section-title">
+        <h2>Browse by Category</h2>
+        <p>Find exactly what you need</p>
+      </div>
+
+      <div class="categories-grid">
+        <div class="category-card" onclick="filterByCategory('new')">
+          <div class="category-icon">🆕</div>
+          <h3>New Golf Carts</h3>
+          <p>Brand new 2024-2025 models with full warranty</p>
+        </div>
+        <div class="category-card" onclick="filterByCategory('used')">
+          <div class="category-icon">🔄</div>
+          <h3>Used Golf Carts</h3>
+          <p>Quality pre-owned carts at great prices</p>
+        </div>
+        <div class="category-card" onclick="filterByCategory('custom')">
+          <div class="category-icon">✨</div>
+          <h3>Custom Builds</h3>
+          <p>Customized carts with premium upgrades</p>
+        </div>
+        <div class="category-card" onclick="filterByCategory('commercial')">
+          <div class="category-icon">🏢</div>
+          <h3>Commercial</h3>
+          <p>Heavy-duty carts for resorts & businesses</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose Smart Generation?</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🚚</div>
+          <div>
+            <h4>Free Shipping</h4>
+            <p>Free delivery to most locations in USA and Canada</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🛡️</div>
+          <div>
+            <h4>Warranty Included</h4>
+            <p>All carts come with comprehensive warranty</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🔧</div>
+          <div>
+            <h4>Service & Maintenance</h4>
+            <p>Lifetime service support for all purchases</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">💰</div>
+          <div>
+            <h4>Best Price Guarantee</h4>
+            <p>We match any competitor's documented price</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">⭐</div>
+          <div>
+            <h4>4.9 Star Rating</h4>
+            <p>Thousands of happy customers nationwide</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">📞</div>
+          <div>
+            <h4>24/7 Support</h4>
+            <p>We're here to help anytime</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Financing Made Easy</h2>
+        <p>Get pre-approved in minutes. Flexible payment plans for every budget.</p>
+      </div>
+      <div style="text-align: center;">
+        <button class="btn btn-primary" onclick="openCalculator()">Calculate Your Payment</button>
+        <button class="btn btn-outline" onclick="openTradeIn()">Get Trade-In Value</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Serving All 50 States & Canada</h2>
+        <p>Fast, reliable delivery across North America</p>
+      </div>
+      <div class="text-center">
+        <p style="max-width: 700px; margin: 0 auto; color: var(--text-light);">From Florida to California, Texas to New York - we deliver golf carts nationwide. Our network of certified carriers ensures your cart arrives safely and on time.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Smart Generation Golf Carts</h4>
+          <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Your trusted source for premium golf carts in USA and Canada.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#listings">Inventory</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="admin.html">Admin Panel</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Popular Makes</h4>
+          <ul class="footer-links">
+            <li><a href="#listings?make=ezgo">EZGO</a></li>
+            <li><a href="#listings?make=clubcar">Club Car</a></li>
+            <li><a href="#listings?make=yamaha">Yamaha</a></li>
+            <li><a href="#listings?make=star">Star EV</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>sales@smartgenerationgolfcarts.com</li>
+            <li>+1 (800) 555-4653</li>
+            <li>Mon-Sat: 8AM - 6PM EST</li>
+            <li>Sun: 10AM - 4PM EST</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html">Buying Guides</a></li>
+            <li><a href="reviews.html">Customer Reviews</a></li>
+            <li><a href="florida.html">Florida Carts</a></li>
+            <li><a href="texas.html">Texas Carts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smart Generation Golf Carts. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+<div class="modal-overlay" id="calculator-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3>Financing Calculator</h3>
+      <button class="modal-close" onclick="closeCalculator()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="calculator-grid">
+        <div class="form-group">
+          <label>Vehicle Price ($)</label>
+          <input type="number" id="calc-price" value="8999" oninput="calculatePayment()">
+        </div>
+        <div class="form-group">
+          <label>Down Payment ($)</label>
+          <input type="number" id="calc-down" value="1000" oninput="calculatePayment()">
+        </div>
+        <div class="form-group">
+          <label>Loan Term</label>
+          <select id="calc-term" onchange="calculatePayment()">
+            <option value="24">24 Months</option>
+            <option value="36">36 Months</option>
+            <option value="48" selected>48 Months</option>
+            <option value="60">60 Months</option>
+            <option value="72">72 Months</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Interest Rate (%)</label>
+          <input type="number" id="calc-rate" value="6.9" step="0.1" oninput="calculatePayment()">
+        </div>
+      </div>
+      <div class="result-card">
+        <div class="label">Estimated Monthly Payment</div>
+        <div class="amount" id="calc-result">$175</div>
+        <div class="details">
+          <div>Total Interest: <span id="calc-interest">$0</span></div>
+          <div>Total Cost: <span id="calc-total">$0</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="tradein-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3>Trade-In Valuation</h3>
+      <button class="modal-close" onclick="closeTradeIn()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <form id="tradein-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Year</label>
+            <select id="trade-year" required>
+              <option value="">Select Year</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Make</label>
+            <select id="trade-make" required>
+              <option value="">Select Make</option>
+              <option value="EZGO">EZGO</option>
+              <option value="Club Car">Club Car</option>
+              <option value="Yamaha">Yamaha</option>
+              <option value="Star EV">Star EV</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Condition</label>
+            <select id="trade-condition" required>
+              <option value="">Select Condition</option>
+              <option value="excellent">Excellent</option>
+              <option value="good">Good</option>
+              <option value="fair">Fair</option>
+              <option value="poor">Poor</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Type</label>
+            <select id="trade-type" required>
+              <option value="">Select Type</option>
+              <option value="electric">Electric</option>
+              <option value="gas">Gas</option>
+              <option value="lithium">Lithium</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Mileage (if known)</label>
+            <input type="number" id="trade-mileage" placeholder="e.g. 500">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Get Value</button>
+      </form>
+      <div class="trade-result" id="trade-result" style="display: none;">
+        <div class="label">Estimated Trade Value</div>
+        <div class="value" id="trade-value">$0</div>
+        <p style="margin-top: 15px; font-size: 14px; opacity: 0.8;">Get a real quote. Bring your cart in for inspection.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="compare-modal">
+  <div class="modal" style="max-width: 900px;">
+    <div class="modal-header">
+      <h3>Compare Golf Carts</h3>
+      <button class="modal-close" onclick="closeCompare()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p style="margin-bottom: 20px; color: var(--text-light);">Select up to 3 carts to compare side-by-side. <button class="btn btn-sm btn-outline" onclick="autoSelectCompare()">Auto-select</button></p>
+      <div class="compare-grid" id="compare-grid"></div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="saved-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3>Saved Searches & Alerts</h3>
+      <button class="modal-close" onclick="closeSaved()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="saved-searches" id="saved-list">
+        <p style="text-align: center; color: var(--text-light);">No saved searches yet. Save a search to get alerts!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

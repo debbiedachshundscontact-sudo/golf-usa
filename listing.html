@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Golf Cart for Sale | Smart Generation Golf Carts</title>
+  <meta name="description" id="page-description" content="Premium golf cart for sale. View specs, photos, and pricing.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" id="page-canonical" href="https://smartgenerationgolfcarts.com/listing.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" id="og-title" content="Golf Cart for Sale">
+  <meta property="og:description" id="og-description" content="Premium golf cart for sale at great price.">
+  <meta property="og:image" id="og-image" content="https://smartgenerationgolfcarts.com/images/cart-default.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" id="twitter-title" content="Golf Cart for Sale">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json" id="schema-product">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Golf Cart",
+    "description": "Premium golf cart for sale",
+    "image": ["https://smartgenerationgolfcarts.com/images/cart-default.jpg"],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "0",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Smart Generation<span>Golf Carts</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#listings">Inventory</a></li>
+          <li><a href="index.html#categories">Categories</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="listing-detail">
+    <div class="container">
+      <nav style="margin-bottom: 20px;">
+        <a href="index.html" style="color: var(--primary-green);">← Back to Inventory</a>
+      </nav>
+
+      <div class="listing-detail-grid" id="listing-detail-content">
+        <div>
+          <div class="gallery-main">
+            <img id="listing-image" src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800" alt="Golf Cart">
+          </div>
+          <div class="gallery-thumbs" id="gallery-thumbs">
+            <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=200" alt="Golf Cart" class="active" onclick="changeImage(this)">
+            <img src="https://images.unsplash.com/photo-1534234828563-0fa3b3d1d66b?w=200" alt="Golf Cart" onclick="changeImage(this)">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=200" alt="Golf Cart" onclick="changeImage(this)">
+          </div>
+        </div>
+
+        <div class="listing-info">
+          <h1 id="listing-title">Loading...</h1>
+          <div class="price" id="listing-price">$0</div>
+
+          <div class="specs-grid">
+            <div class="spec-item">
+              <span class="spec-label">Year</span>
+              <span class="spec-value" id="spec-year">-</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Make</span>
+              <span class="spec-value" id="spec-make">-</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Model</span>
+              <span class="spec-value" id="spec-model">-</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Condition</span>
+              <span class="spec-value" id="spec-condition">-</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Type</span>
+              <span class="spec-value" id="spec-type">-</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Seats</span>
+              <span class="spec-value" id="spec-seats">-</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Color</span>
+              <span class="spec-value" id="spec-color">-</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Mileage</span>
+              <span class="spec-value" id="spec-mileage">-</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Location</span>
+              <span class="spec-value" id="spec-location">-</span>
+            </div>
+          </div>
+
+          <div class="features-list" id="listing-features">
+          </div>
+
+          <div class="spec-item" style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border);">
+            <span class="spec-label">Accepted Payment Methods</span>
+            <div class="features-list" id="listing-payments"></div>
+          </div>
+
+          <div class="spec-item" id="payment-details-container" style="display: none; margin-top: 15px;">
+            <span class="spec-label">Payment Details</span>
+            <span class="spec-value" id="payment-details" style="font-weight: 400; color: var(--text-light);"></span>
+          </div>
+
+          <div class="contact-form">
+            <h3>Request More Information</h3>
+            <form id="contact-form">
+              <input type="text" id="contact-name" placeholder="Your Name" required>
+              <input type="email" id="contact-email" placeholder="Your Email" required>
+              <input type="tel" id="contact-phone" placeholder="Your Phone">
+              <textarea id="contact-message" rows="3" placeholder="I'm interested in this golf cart..."></textarea>
+              <button type="submit" class="btn btn-primary">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="section mt-20">
+        <div class="section-title">
+          <h2>Description</h2>
+        </div>
+        <div id="listing-description" style="max-width: 800px; color: var(--text-light);">
+        </div>
+      </div>
+
+      <div class="section section-alt">
+        <div class="section-title">
+          <h2>Related Listings</h2>
+        </div>
+        <div class="listings-grid" id="related-listings">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Smart Generation Golf Carts</h4>
+          <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Your trusted source for golf carts in USA and Canada since 2010.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#listings">Inventory</a></li>
+            <li><a href="admin.html">Admin Panel</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Popular Makes</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">EZGO</a></li>
+            <li><a href="index.html">Club Car</a></li>
+            <li><a href="index.html">Yamaha</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>sales@smartgenerationgolfcarts.com</li>
+            <li>+1 (800) 555-4653</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smart Generation Golf Carts. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
