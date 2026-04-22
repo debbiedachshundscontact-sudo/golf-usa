@@ -222,6 +222,19 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Calculator initialized');
   }
 
+  // Add button click handlers
+  const calcBtn = document.getElementById('calc-btn');
+  if (calcBtn) {
+    calcBtn.addEventListener('click', openCalculator);
+    console.log('Calculator button handler added');
+  }
+
+  const tradeBtn = document.getElementById('trade-btn');
+  if (tradeBtn) {
+    tradeBtn.addEventListener('click', openTradeIn);
+    console.log('Trade-In button handler added');
+  }
+
   // Modal close on overlay click
   document.querySelectorAll('.modal-overlay').forEach(overlay => {
     overlay.addEventListener('click', function(e) {
