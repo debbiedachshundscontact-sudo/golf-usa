@@ -202,6 +202,7 @@ function filterByCategory(category) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('Page loaded, initializing...');
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
 
@@ -211,23 +212,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  if (document.getElementById('listings-grid')) {
-    renderListings('listings-grid');
-  }
-
+  // Initialize chatbot
   initChatbot();
+  console.log('Chatbot initialized');
 
-  // Initialize modals
-  const calcModal = document.getElementById('calculator-modal');
-  if (calcModal) {
+  // Initialize calculator if modal exists
+  if (document.getElementById('calculator-modal')) {
     calculatePayment();
-  }
-
-  const tradeModal = document.getElementById('tradein-modal');
-  if (tradeModal) {
-    tradeModal.addEventListener('submit', function(e) {
-      e.preventDefault();
-    });
+    console.log('Calculator initialized');
   }
 
   // Modal close on overlay click
@@ -238,6 +230,11 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  console.log('All modals ready');
+
+  if (document.getElementById('listings-grid')) {
+    renderListings('listings-grid');
+  }
 
   const searchForm = document.getElementById('search-form');
   if (searchForm) {
@@ -742,8 +739,14 @@ function calculatePayment() {
 }
 
 function openCalculator() {
-  document.getElementById('calculator-modal').classList.add('show');
-  calculatePayment();
+  console.log('openCalculator called');
+  const modal = document.getElementById('calculator-modal');
+  if (modal) {
+    modal.classList.add('show');
+    calculatePayment();
+  } else {
+    alert('Calculator modal not found!');
+  }
 }
 
 function closeCalculator() {
@@ -755,7 +758,13 @@ window.closeCalculator = closeCalculator;
 
 // Trade-In Valuation
 function openTradeIn() {
-  document.getElementById('tradein-modal').classList.add('show');
+  console.log('openTradeIn called');
+  const modal = document.getElementById('tradein-modal');
+  if (modal) {
+    modal.classList.add('show');
+  } else {
+    alert('Trade-In modal not found!');
+  }
 }
 
 function closeTradeIn() {
